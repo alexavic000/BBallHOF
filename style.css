@@ -1,0 +1,157 @@
+*,*::before,*::after{box-sizing: border-box}
+
+/* imports font from google */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+:root {
+  --primary-color: #fff;
+  --darkest-blue: #0267C1;
+  --lightest-blue: #0075C4;
+  --yellow-color: #EFA00B;
+  --orange-color: #D65108;
+  --brownish-color: #591F0A;
+  
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+} 
+
+/* Apply a background color and text styles to the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
+  color: #333;
+  line-height: 1.5;
+  justify-content: center;
+  
+}
+
+/* Style the header with a background color, centered text, and padding */
+header {
+  background-color: var(--darkest-blue);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style: none;
+  text-align: center;
+  background-color: var(--orange-color);
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Style the hero section with a background image and centered text */
+.hero {
+  background: url('basketball.jpg') center/cover no-repeat;
+  text-align: center;
+  padding: 100px;
+  color: black;
+}
+
+/* Style the about section in the about.html */ 
+.about {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+/* Style the featured inductees section */
+.inductees {
+  text-align: center;
+  padding: 20px;
+}
+
+.inductee {
+  display: inline-block;
+  margin: 20px;
+  border: 1px solid var(--darkest-blue);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.inductee img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+/* Style the events section */
+.events {
+  padding: 20px;
+  background-color: var(--primary-color);
+}
+
+.event {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid var(--orange-color);
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Style the footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: var(--primary-color);
+}
+
+/* Add some hover effects */
+a:hover {
+  color: var(--yellow-color);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+    display: block;
+    background-color: var(--orange-color);
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px;
+  }
+
+  .hero {
+    padding: 60px;
+  }
+
+  .inductees {
+    padding: 10px;
+  }
+
+  .inductee {
+    display: block;
+    margin: 10px;
+  }
+
+  .events {
+    padding: 10px;
+  }
+
+  .event {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
